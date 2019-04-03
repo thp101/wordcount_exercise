@@ -1,0 +1,14 @@
+여기는 RESULT 페이지다
+<br> <br>
+니가 쓴 글은 바로 <br> <br>
+<h1>{{full}}</h1>
+<br> <br>
+그리구 니가 입력한 단어의 개수는 <b><i>{{total}}</i></b> 개야.
+<br> <br>
+{% for word, howmany in count %}
+{{word}} : {{howmany}}
+<br>
+{%endfor%}
+<br>
+
+<a href="{%url 'home' %}">다시 홈으로 갈까?</a>
