@@ -1,18 +1,20 @@
+{% load static %}
 <!DOCTYPE html>
-
 <html>
-
-
-<h1> 글을 </h1>
-<h2> 써라 </h2>
-<h3> 얍! </h3>
-
-<form action="{%url 'result' %}">
-    <a href="{%url 'about' %}">ABOUT으로 가버려!</a><br>
-    <textarea name="fulltext" cols="30" rows="10">
-
-    </textarea>
-    <input type="submit" value="글자수세기">
-</form>
-
+    <head>
+        <meta charset="utf-8">
+        <title>thp101's WORDCOUNT</title>
+        <link rel="stylesheet" href="{% static 'css/wordcount.css'%}"> 
+    </head>
+    <body>
+        <!-- header -->
+        <div class="header written_sentence"> WELCOME TO thp101's WORDCOUNT PROJECT! </div>
+        <form action="{%url 'result' %}">
+            <div class="home_to_about"><a href="{%url 'about' %}">About me</a></div><br>
+            <textarea name="fulltext" cols="30" rows="10">Enter a sentence.</textarea>
+            <br><br>
+            <input type="submit" value="How many words?">
+            <br><br>
+        </form>
+    </body>
 </html>

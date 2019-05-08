@@ -1,9 +1,18 @@
-여기는 RESULT 페이지다
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>thp101's WORDCOUNT</title>
+    <link rel="stylesheet" href="{% static 'css/wordcount.css'%}">
+</head>
+<body>
+<h2>This is the result page.</h2>
 <br> <br>
-니가 쓴 글은 바로 <br> <br>
-<h1>{{full}}</h1>
+<h2>The written sentence (or words) is <br> <br></h2>
+<div class="written_sentence"><h1>{{full}}</h1></div>
 <br> <br>
-그리구 니가 입력한 단어의 개수는 <b><i>{{total}}</i></b> 개야.
+<div class="box">The total amount of words is <br><div class="result_content"><b><i>{{total}}</i></b></div></div>
 <br> <br>
 {% for word, howmany in count %}
 {{word}} : {{howmany}}
@@ -11,4 +20,6 @@
 {%endfor%}
 <br>
 
-<a href="{%url 'home' %}">다시 홈으로 갈까?</a>
+<h2><a href="{%url 'home' %}">Let's do it again!</a></h2>
+</body>
+</html>

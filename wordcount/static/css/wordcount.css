@@ -1,0 +1,57 @@
+.header {
+    color: white;
+    font-size: 40px;
+    font-family: "Helvetica";
+}
+
+body {  background: linear-gradient(-180deg, black, gray);
+    padding-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.home_to_about {
+color: hotpink;
+font-size: 30px;
+font-family: "Georgia";
+background-color: skyblue;
+margin-bottom: 30px;
+width: 200px;
+
+display: inline-block;
+
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+.written_sentence{
+    color: hotpink;
+    background-color: skyblue;
+    border: 2px round;
+    padding: 30px;
+    margin: 60px;
+}
+
+.box {
+    height: 200px;
+    text-align: center;
+    width: 215px;
+    background-color: white;
+  border: 1px solid #466995;
+  display: inline-block;
+  
+  padding: 50px;
+
+  margin: 10px;
+  position: relative;
+  }
+
+  .result_content {
+      font-size: 100px;
+  }
